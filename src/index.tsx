@@ -89,12 +89,13 @@ export default class TimeCalendar extends PureComponent<
             <div className="calendar">
                 <Header
                     selectedDate={
-                        (!timeSelect
+                        !timeSelect
                             ? dateFns.format(selectedDate, "MMMM YYYY", {
                                   locale: it
                               })
-                            : dateFns.format(selectedDate, "dddd Do MMMM"),
-                        { locale: it })
+                            : dateFns.format(selectedDate, "dddd Do MMMM", {
+                                  locale: it
+                              })
                     }
                     nextTime={this.nextTime}
                     prevTime={this.prevTime}
