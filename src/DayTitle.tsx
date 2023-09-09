@@ -11,6 +11,7 @@ export default class DayTitle extends React.Component<
     DayTitleProps,
     DayTitleState
 > {
+    dayTitle: any;
     constructor(props: DayTitleProps) {
         super(props);
         this.state = {
